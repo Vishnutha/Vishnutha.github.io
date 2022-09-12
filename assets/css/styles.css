@@ -142,12 +142,12 @@ a{
     background-color:#102738;
     transition: .5s;
   }
-  .home__img{
+  /* .home__img{
     padding: 0px;
     top:50%;
     margin-right: 12%;
 
-  }
+  } */
 }
 .nav__item{
   margin-bottom: var(--mb-4);

@@ -3,20 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/apple-touch-icon.png"> 
         <link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav/favicon-16x16.png">
         <link rel = "icon" type="image/png" href = "favicon.ico">
         <link rel="manifest" href="assets/img/fav/site.webmanifest">
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"
-      rel="stylesheet"
-    />
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"
+        rel="stylesheet"
+        />
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
         <title>Vishnutha Sheela</title>
     </head>
@@ -45,18 +54,23 @@
         </header>
 
         <main class="l-main">
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hello there I'm <span class="home__title-color">Vishnutha Sheela</span></h1><h1 class="home__subtitle">3<sup>rd</sup> &nbsp year CSE Student@IIITB</h1>
-                    <a href="assets/files/Vishnutha_Resume.pdf" target="_blank" class="button"> My Resume</a>
+            <div class = "row">
+                <div class = "col-md-12">
+                    <section class="home bd-grid" id="home">
+                        <div class="home__data">
+                            <h1 class="home__title">Hello there I'm <span class="home__title-color">Vishnutha Sheela</span></h1><h1 class="home__subtitle">3<sup>rd</sup> &nbspyear CSE Student@IIITB</h1>
+                            <a href="assets/files/Vishnutha_Resume.pdf" target="_blank" class="button"> My Resume</a>
+                        </div>
+                        <div class="home__social col-md-12">
+                            <a href="https://www.linkedin.com/in/vishnutha-sheela-838591205/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/Vishnutha" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                        </div>
+                    
+                    </section>
                 </div>
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/vishnutha-sheela-838591205/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/Vishnutha" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                <div class="home__img col-md-12">    
+                    <img id = start  src="assets/img/vis.png" alt="">
                 </div>
-            </section>
-            <div class="home__img">    
-                <img id = start  src="assets/img/vis.png" alt="">
             </div>
             <section class="about section " id="about">
                 <h2 class="section-title">About</h2>
@@ -120,22 +134,9 @@
                             
                             <div class="skills__names">
                                 <span class="skills__name">Node.js &nbsp;</span>
-                                <i class='bx devicon-nodejs-plain skills__icon'></i>
-                                
+                                <i class='bx devicon-nodejs-plain skills__icon'></i>    
                             </div>
                         </div>
-                        <!-- <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div> 
-                            
-                            <div class="skills__names">
-                                <span class="skills__name">MongoDB &nbsp;</span>
-                                <i class='bx devicon-mongodb-plain skills__icon'></i>
-                                
-                            </div>
-                        </div> -->
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx devicon-c-plain-wordmark skills__icon'></i>
@@ -252,8 +253,8 @@
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form class="contact__form" action="https://formspree.io/f/xpzyorad" target="_blank" method="POST">
+                <div class="contact__container bd-grid"> 
+                    <form class="contact__form" action="mailto:Vishnutha.Sheela@iiitb.ac.in" target="_blank" method="POST">
                         <input type="text" name="name" placeholder="Name" class="contact__input">
                         <input type="mail" name="_replyto" placeholder="Email" class="contact__input">
                         <textarea name="message" placeholder="Your Message" id="" cols="0" rows="10" class="contact__input"></textarea>
